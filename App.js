@@ -57,12 +57,12 @@ const ProfileScreen = ({ navigation }) => {
                     source={images[index]}
                     style={{width: 400, height: 650, borderRadius: 10, top: 50}}
                 />
-            
+                
 
             </TouchableOpacity>
             <View style={styles.bottom}>
-                <Ionicons name="md-heart-circle-outline" size={50} />
-                <Ionicons name="md-heart-dislike-circle-outline" size={50} />
+                <Ionicons name="md-heart-circle-outline" size={50} onPress={() => alert("LIKE")}/>
+                <Ionicons name="md-heart-dislike-circle-outline" size={50} onPress={() => alert("NEXT")}/>
             </View>
         </View>
     );
